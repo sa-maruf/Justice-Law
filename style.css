@@ -1,0 +1,418 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1170px;
+    /* border: 1px solid rgb(158, 151, 151); */
+    border-top: none;
+    justify-self: center;
+}
+
+/* Header part  */
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+header nav ul li a:hover {
+    color: rgb(214, 141, 52) ;
+    font-size: 18px;
+}
+
+header nav button {
+    background-color: rgb(182, 140, 90);
+    width: 160px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 600;
+} 
+
+header nav button:hover {
+    background-color: rgb(247, 146, 13);
+}
+
+/* main banner part  banner part  */
+
+.banner {
+    background-image: url(./images/banner.png) ;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+
+}
+
+.banner-02 {
+    background-image: url(./images/Rectangle\ 5.png);
+    background-position: center;
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-para-01 {
+    color: rgb(255, 255, 255);
+    font-family: EB Garamond;
+    font-size: 70px;
+    font-weight: 800;
+}
+
+.banner-para-02 {
+    color: rgb(231, 231, 231);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.banner-search {
+    width: 400px;
+    height: 40px;
+    color: rgb(160, 160, 160);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 10px;
+    background: transparent;
+    border: 1PX solid rgb(182,140,90);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    float: left;
+}
+
+.banner-search:focus {
+    outline: none;
+}
+
+.banner-search::placeholder {
+    color: rgb(189, 192, 196); 
+}
+
+.banner-button {
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(182, 140, 90);
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    float: left;
+}
+
+
+.banner-button:hover {
+    background-color: rgb(247, 146, 13);
+}
+
+/* practice area part */
+
+.practice-area {
+    margin-top: 100px;
+}
+
+.practice-area .para-01 {
+    color: rgb(65, 64, 64);
+    font-family: EB Garamond;
+    font-size: 34px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.practice-area .para-02 {
+    color: rgb(112, 112, 112);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.practice-area .law-table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.practice-area .law-table .law-box {
+    border: 1px solid rgb(231, 231, 231);
+    width: 370px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.practice-area .law-table .law-box .data-01 {
+    color: rgb(65, 64, 64);
+    font-family: EB Garamond;
+    font-size: 26px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.practice-area .law-table .law-box .data-02 {
+    color: rgb(112, 112, 112);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.practice-area .law-table .law-box img {
+    margin-top: 24px;
+}
+
+/* Client Say part */
+
+.client-part {
+    margin-top: 100px;
+}
+
+.client-part .para-01 {
+    color: rgb(65, 64, 64);
+font-family: EB Garamond;
+font-size: 34px;
+font-weight: 800;
+text-align: center;
+}
+
+.client-part .para-02 {
+    color: rgb(112, 112, 112);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cp-bg {
+    background-image: url(./images/banner.png);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    margin-top: 60px;
+}
+
+.cp-bg2 {
+    background-image: url(./images/Rectangle\ 7.png);
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cp-bg2 .data-01 {
+    color: rgb(255, 255, 255);
+    font-family: EB Garamond;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.cp-bg2 .data-02 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+.cp-bg2 .data-03 {
+    color: rgb(243, 243, 243);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+/* Frequently Asked Any Questions part  */
+
+.questions {
+   margin-top: 100px;
+}
+
+.questions .para-01 {
+    color: rgb(65, 64, 64);
+    font-family: EB Garamond;
+    font-size: 34px;
+    font-weight: 800; 
+    text-align: center;
+}
+
+.questions .para-02 {
+    color: rgb(112, 112, 112);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text {
+    color: rgb(65, 64, 64);
+    font-family: EB Garamond;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+/* Contact With Us part  */
+
+.contact-us {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-table {
+    width: 574px ; 
+    /* border: 1px solid; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-box {
+    width: 285px;
+    height: 250px;
+    background-color: rgb(243, 243, 243);
+    border: 1px solid rgb(207, 207, 207);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-box .contact-01 {
+    color: rgb(65, 64, 64);
+    font-family: EB Garamond;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.contact-box .contact-02 {
+    color: rgb(112, 112, 112);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.input-123 {
+    width: 560px;
+    height: 50px;
+    background-color: rgb(243, 243, 243);
+    border: none;
+    border-radius: 6px;
+    padding-left: 20px;
+    outline: none;
+}
+
+.input-sms {
+    width: 560px;
+    padding-bottom: 110px;
+    padding-left: 20px;
+    height: 70px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    background-color: rgb(243, 243, 243);
+}
+
+.sent-btn {
+    width: 580px;
+    height: 46px;
+    cursor: pointer;
+    background-color: rgb(182, 140, 90);
+    border: none;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sent-btn:hover {
+    background-color: rgb(247, 146, 13);
+}
+
+/* footer part  */
+
+footer {
+    margin-top: 100px;
+    background-color: rgb(17, 17, 17);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+footer .data-01 {
+    color: rgb(255, 255, 255);
+    font-family: EB Garamond;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+footer .data-02 {
+    color: rgb(207, 207, 207);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.input-mail {
+    height: 34px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.mail-btn {
+    height: 34px;
+    width: 40px;
+    background-color: rgb(182, 140, 90);
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.mail-btn:hover {
+    background-color: rgb(247, 146, 13);
+}
