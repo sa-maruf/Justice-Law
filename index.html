@@ -1,106 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justice</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/34353e81d8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="./nav.css">
 </head>
+
 <body>
-    
-<section>
+    <!-- Header part  -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar-con">
+                <div class="logo">
+                    <img style="color: black;" src="./images/logo.png" alt="">
+                </div>
 
-<!-- Header part  -->
-    <header style=" position: sticky; top: 0;  background-color: rgb(51, 41, 41) ;">
-        <nav style="display: flex; justify-content: space-between; align-items: center; height: 80px; width: 1170px;">
-            <div style="display: flex; align-items: center; margin-left: 10px;"> 
-                <img style="color: black;" src="./images/logo.png" alt="">
+                <ul class="des-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Cases</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+
+                <div class="des-btn">
+                    <a href="#"><button class="btn">Free Consultation</button></a>
+                </div>
+                <div id="mob-menu-btn" class="mob-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
-
-            <ul style="display: flex; gap: 50px;">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Cases</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
-
-            <div style="margin-right: 10px;">
-                <a href="#"><button>Free Consultation</button></a>
+            <div id="mob-menu" class="mob-menu">
+                <a href="#">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>Services</li>
+                </a>
+                <a href="#">
+                    <li>Cases</li>
+                </a>
+                <a href="#">
+                    <li>Blog</li>
+                </a>
+                <a href="#">
+                    <li>Contact Us</li>
+                </a>
+                <div>
+                    <a href="#"><button>Free Consultation</button></a>
+                </div>
             </div>
         </nav>
     </header>
-
-<!-- main body part -->
-
+    <!-- main part -->
     <main>
-<!-- Banner part  -->
+        <!-- Banner part  -->
         <section class="banner">
             <div class="banner-02">
-                <p class="banner-para-01">We Provide Effective <br> Legal Solutions</p>
-                <p class="banner-para-02">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p> 
-                 <div style="margin-top: 22px; display: flex; justify-content: center;">
-                     <input class="banner-search" type="search" name="search" id="search" placeholder="Search your services">
-                     <a href="#"><button class="banner-button">Search</button></a>
-                 </div>
-            </div> 
+                <p class="banner-para-01">We Provide Effective Legal Solutions</p>
+                <p class="banner-para-02">There are many variations of passages of Lorem Ipsum available, but the
+                    majority have suffered alteration in some form, by injected humour.</p>
+                <div style="margin-top: 30px; display: flex; justify-content: center;">
+                    <input class="banner-search" type="search" name="search" id="search"
+                        placeholder="Search your services">
+                    <a href="#"><button class="banner-button">Search</button></a>
+                </div>
+            </div>
         </section>
-
-<!-- The Legal Practice Area part  -->
+        <!-- The Legal Practice Area part  -->
         <section class="practice-area">
             <p class="para-01">The Legal Practice Area</p>
-            <p class="para-02">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
+            <p class="para-02">There are many variations of passages of Lorem Ipsum available, but the majority have
+                suffered alteration in some form, by injected humour.</p>
 
-            <div class="law-table">
+            <!-- <div class="law-table">
                 <div class="law-box" style="border-top: none; border-left: none;">
                     <img src="./images/business.png" alt="" width="50px">
                     <p class="data-01">Business Law</p>
-                    <p class="data-02">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some form, <br> by injected humour.</p>
+                    <p class="data-02">There are many variations of <br> passages of Lorem Ipsum <br> available, but the
+                        majority have <br> suffered alteration in some form, <br> by injected humour.</p>
                     <a href="#"><img src="./images/Frame.png" alt="" width="30px"></a>
                 </div>
 
-                <div class="law-box" style="border-top: none; background: linear-gradient(180.00deg, rgb(243, 243, 243),rgba(243, 243, 243, 0) 100%);">
+                <div class="law-box"
+                    style="border-top: none; background: linear-gradient(180.00deg, rgb(243, 243, 243),rgba(243, 243, 243, 0) 100%);">
                     <img src="./images/criminal.png" alt="" width="50px">
                     <p class="data-01">Criminal Law</p>
-                    <p class="data-02">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some form, <br> by injected humour.</p>
+                    <p class="data-02">There are many variations of <br> passages of Lorem Ipsum <br> available, but the
+                        majority have <br> suffered alteration in some form, <br> by injected humour.</p>
                     <a href="#"><img src="./images/Frame.png" alt="" width="30px"></a>
                 </div>
 
                 <div class="law-box" style="border-top: none; border-right: none;">
                     <img src="./images/child.png" alt="" width="50px">
                     <p class="data-01">Child Support</p>
-                    <p class="data-02">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some form, <br> by injected humour.</p>
+                    <p class="data-02">There are many variations of <br> passages of Lorem Ipsum <br> available, but the
+                        majority have <br> suffered alteration in some form, <br> by injected humour.</p>
                     <a href="#"><img src="./images/Frame.png" alt="" width="30px"></a>
                 </div>
 
                 <div class="law-box" style="border-bottom: none; border-left: none;">
                     <img src="./images/education.png" alt="" width="50px">
                     <p class="data-01">Education Law</p>
-                    <p class="data-02">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some form, <br> by injected humour.</p>
+                    <p class="data-02">There are many variations of <br> passages of Lorem Ipsum <br> available, but the
+                        majority have <br> suffered alteration in some form, <br> by injected humour.</p>
                     <a href="#"><img src="./images/Frame.png" alt="" width="30px"></a>
                 </div>
 
                 <div class="law-box" style="border-bottom: none;">
                     <img src="./images/divorce.png" alt="" width="50px">
                     <p class="data-01">Divorce Law</p>
-                    <p class="data-02">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some form, <br> by injected humour.</p>
+                    <p class="data-02">There are many variations of <br> passages of Lorem Ipsum <br> available, but the
+                        majority have <br> suffered alteration in some form, <br> by injected humour.</p>
                     <a href="#"><img src="./images/Frame.png" alt="" width="30px"></a>
                 </div>
 
                 <div class="law-box" style="border-bottom: none; border-right: none;">
                     <img src="./images/tax.png" alt="" width="50px">
                     <p class="data-01">Tax Law</p>
-                    <p class="data-02">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some form, <br> by injected humour.</p>
+                    <p class="data-02">There are many variations of <br> passages of Lorem Ipsum <br> available, but the
+                        majority have <br> suffered alteration in some form, <br> by injected humour.</p>
                     <a href="#"><img src="./images/Frame.png" alt="" width="30px"></a>
                 </div>
-            </div>
+            </div> -->
         </section>
 
-<!-- Client Say part -->
-        <section class="client-part">
+        <!-- Client Say part -->
+        <!-- <section class="client-part">
             <p class="para-01">What Our Client Say</p>
             <p class="para-02">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
 
@@ -112,10 +143,10 @@
                     <p class="data-03">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin <br> literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney <br> College in Virginia, looked up one of the more obscure Latin words, consectetur.</p>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-<!-- Frequently Asked Any Questions part -->
-        <section class="questions">
+        <!-- Frequently Asked Any Questions part -->
+        <!-- <section class="questions">
             <p class="para-01">Frequently Asked Any Questions</p>
             <p class="para-02">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
 
@@ -159,10 +190,10 @@
                     <img src="./images/faq.png" alt="">
                 </div>
             </div>
-        </section>
+        </section> -->
 
-<!-- Contact With Us part  -->
-        <section style="margin-top: 100px;">
+        <!-- Contact With Us part  -->
+        <!-- <section style="margin-top: 100px;">
             <p style=" color: rgb(65, 64, 64); font-family: EB Garamond; font-size: 34px; font-weight: 800; text-align: center;">Contact With Us</p>
             <p style="margin-top: 20px; color: rgb(112, 112, 112); font-family: Poppins; font-size: 14px; font-weight: 400; text-align: center;">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
 
@@ -205,11 +236,11 @@
                     <a href="#"><button class="sent-btn">Send Message</button></a>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
-<!-- footer part  -->
-    <footer>
+    <!-- footer part  -->
+    <!-- <footer>
         <div style="height: 230px;">
             <img src="./images/logo.png" alt="" width="110px">
             <p class="data-02">There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br> suffered alteration in some form, <br> by injected humour.</p>
@@ -245,7 +276,8 @@
                 <input class="input-mail" type="text" name="" id="" placeholder="Email Address"> <a href="#"><button class="mail-btn"><img src="./images/sent-logo.png" alt="" width="26px"></button></a>
             </div>
         </div>
-    </footer>
-</section>   
+    </footer> -->
+    <script src="./script.js"></script>
 </body>
+
 </html>

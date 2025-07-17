@@ -1,0 +1,42 @@
+header{
+    position: sticky; 
+    top: 0;  
+    background-color: rgb(51, 41, 41) ;
+}
+.navbar{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 18px; 
+}
+.navbar-con{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+.des-menu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.des-menu a{
+    color: white;
+}
+.mob-menu-btn{
+    display: none;
+}
+.mob-menu{
+    display: none;
+}
+@media(max-width:910px){
+    .des-menu , .des-btn {
+        display: none;
+    }
+    .mob-menu-btn{
+        display: flex;
+        color: white;
+        font-size: 34px;
+    }
+    .mob-menu.active{
+        display: block;
+    }
+}

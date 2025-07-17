@@ -1,0 +1,17 @@
+@media(max-width:768px){
+    /* main banner part */
+    .banner-para-01{
+        width: 100%;
+        font-size: 60px;
+    }
+    .banner-para-02{
+        width: 100%;
+    }
+    .banner-search{
+        width: 80%;
+    }
+    /* practice area part */
+    .practice-area .para-02{
+        width: 80%;
+    }
+}
