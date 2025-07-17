@@ -1,6 +1,6 @@
 header{
-    position: sticky; 
-    top: 0;  
+    /* position: sticky; 
+    top: 0;   */
     background-color: rgb(51, 41, 41) ;
 }
 .navbar{
@@ -28,6 +28,9 @@ header{
     display: none;
 }
 @media(max-width:910px){
+    .navbar{
+        padding: 24px 18px;
+    }
     .des-menu , .des-btn {
         display: none;
     }

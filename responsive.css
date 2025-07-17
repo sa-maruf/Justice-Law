@@ -1,17 +1,93 @@
-@media(max-width:768px){
+@media(max-width:768px) {
+
     /* main banner part */
-    .banner-para-01{
+    .banner-para-01 {
         width: 100%;
         font-size: 60px;
     }
-    .banner-para-02{
+
+    .banner-para-02 {
         width: 100%;
     }
-    .banner-search{
+
+    .banner-search {
         width: 80%;
     }
+
     /* practice area part */
-    .practice-area .para-02{
+    .practice-area .para-02 {
         width: 80%;
+    }
+
+    .practice-area .law-table {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* What Our Client Say part */
+    .client-part .para-02 {
+        width: 90%;
+    }
+
+    .cp-bg2 .data-03 {
+        width: 80%;
+    }
+
+    /* Frequently Asked Any Questions part  */
+    .questions-con .para-01 {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .questions-con .para-02 {
+        width: 90%;
+    }
+
+    .questions-con-02 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 60px;
+    }
+
+    .questions-con-02 .box {
+        padding: 30px 20px;
+    }
+
+    /* Contact With Us part  */
+    .contact-con .para-02 {
+        width: 90%;
+    }
+
+    .contact-us {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contact-table {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* footer part  */
+    .foot-con {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media(max-width:420px) {
+    .foot-con {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+}
+
+@media(min-width:769px) and (max-width:910px) {
+
+    /* practice area part */
+    .practice-area .law-table {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Frequently Asked Any Questions part  */
+    .questions-con-02 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 70px;
     }
 }

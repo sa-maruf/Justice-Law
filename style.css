@@ -137,22 +137,23 @@ main {
 }
 
 .practice-area .law-table {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    margin-top: 80px;
     text-align: center;
+
 }
 
 .practice-area .law-table .law-box {
     border: 1px solid rgb(231, 231, 231);
-    width: 370px;
-    height: 450px;
+    padding: 60px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    background: linear-gradient(180.00deg, rgb(243, 243, 243), rgba(243, 243, 243, 0) 100%);
+    border-radius: 2px;
 }
 
 .practice-area .law-table .law-box .data-01 {
@@ -175,7 +176,7 @@ main {
     margin-top: 24px;
 }
 
-/* Client Say part */
+/* What Our Client Say part */
 
 .client-part {
     margin-top: 100px;
@@ -191,10 +192,11 @@ main {
 
 .client-part .para-02 {
     color: rgb(112, 112, 112);
-    font-family: Poppins;
     font-size: 14px;
     font-weight: 400;
     text-align: center;
+    width: 60%;
+    margin: 0 auto;
     margin-top: 20px;
 }
 
@@ -202,19 +204,16 @@ main {
     background-image: url(./images/banner.png);
     background-position: center;
     background-size: cover;
-    height: 500px;
+    border-radius: 8px;
     margin-top: 60px;
 }
 
 .cp-bg2 {
     background-image: url(./images/Rectangle\ 7.png);
-    height: 500px;
     background-position: center;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    border-radius: 8px;
+    padding: 120px 0;
     text-align: center;
 }
 
@@ -239,16 +238,19 @@ main {
     font-family: Poppins;
     font-size: 12px;
     font-weight: 400;
+    line-height: 24px;
+    width: 65%;
+    margin: 0 auto;
     margin-top: 20px;
 }
 
 /* Frequently Asked Any Questions part  */
 
-.questions {
+.questions-con {
     margin-top: 100px;
 }
 
-.questions .para-01 {
+.questions-con .para-01 {
     color: rgb(65, 64, 64);
     font-family: EB Garamond;
     font-size: 34px;
@@ -256,7 +258,64 @@ main {
     text-align: center;
 }
 
-.questions .para-02 {
+.questions-con .para-02 {
+    color: rgb(112, 112, 112);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    width: 62%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.questions-con-02 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 80px;
+    align-items: center;
+}
+
+.questions-con-02 .box {
+    display: flex;
+    background-color: rgb(243, 243, 243);
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    padding: 36px 30px;
+}
+
+.questions-con-02 .text-01 {
+    color: rgb(65, 64, 64);
+    font-family: EB Garamond;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.questions-con-02 .text-02 {
+    color: rgb(112, 112, 112);
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 8px
+}
+
+
+/* Contact With Us part  */
+.contact-con {
+    margin-top: 100px;
+}
+
+.contact-con .para-01 {
+    color: rgb(65, 64, 64);
+    font-family: EB Garamond;
+    font-size: 34px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.contact-con .para-02 {
+    width: 60%;
+    margin: 0 auto;
     color: rgb(112, 112, 112);
     font-family: Poppins;
     font-size: 14px;
@@ -265,38 +324,26 @@ main {
     margin-top: 20px;
 }
 
-.text {
-    color: rgb(65, 64, 64);
-    font-family: EB Garamond;
-    font-size: 20px;
-    font-weight: 800;
-}
-
-
-/* Contact With Us part  */
-
 .contact-us {
     margin-top: 50px;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
 .contact-table {
-    width: 574px;
-    /* border: 1px solid; */
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
 }
 
 .contact-box {
-    width: 285px;
-    height: 250px;
     background-color: rgb(243, 243, 243);
     border: 1px solid rgb(207, 207, 207);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 40px 0;
+
 }
 
 .contact-box .contact-01 {
@@ -309,13 +356,12 @@ main {
 
 .contact-box .contact-02 {
     color: rgb(112, 112, 112);
-    font-family: Poppins;
     font-size: 12px;
     font-weight: 400;
 }
 
 .input-123 {
-    width: 560px;
+    width: 100%;
     height: 50px;
     background-color: rgb(243, 243, 243);
     border: none;
@@ -325,10 +371,10 @@ main {
 }
 
 .input-sms {
-    width: 560px;
-    padding-bottom: 110px;
+    width: 100%;
+    height: 80px;
+    padding-top: 10px;
     padding-left: 20px;
-    height: 70px;
     border: none;
     outline: none;
     border-radius: 6px;
@@ -336,20 +382,15 @@ main {
 }
 
 .sent-btn {
-    width: 580px;
+    width: 100%;
     height: 46px;
     cursor: pointer;
     background-color: rgb(182, 140, 90);
     border: none;
     border-radius: 4px;
     color: rgb(255, 255, 255);
-    font-family: Poppins;
     font-size: 14px;
     font-weight: 600;
-}
-
-.sent-btn:hover {
-    background-color: rgb(247, 146, 13);
 }
 
 /* footer part  */
@@ -357,26 +398,29 @@ main {
 footer {
     margin-top: 100px;
     background-color: rgb(17, 17, 17);
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
 }
 
-footer .data-01 {
+.foot-con {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 18px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+}
+
+.foot-con .data-01 {
     color: rgb(255, 255, 255);
     font-family: EB Garamond;
     font-size: 18px;
     font-weight: 800;
 }
 
-footer .data-02 {
+.foot-con .data-02 {
     color: rgb(207, 207, 207);
-    font-family: Poppins;
     font-size: 12px;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 24px;
     text-decoration: none;
 }
 
@@ -387,18 +431,16 @@ footer .data-02 {
     padding-left: 10px;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
+    float: left;
 }
 
 .mail-btn {
     height: 34px;
-    width: 40px;
+    padding: 0 8px;
     background-color: rgb(182, 140, 90);
     border: none;
     cursor: pointer;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
-}
-
-.mail-btn:hover {
-    background-color: rgb(247, 146, 13);
+    float: left;
 }
