@@ -32,6 +32,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 18px;
+    margin-top: 40px;
 }
 
 .banner {
@@ -39,16 +40,14 @@ main {
     background-position: center;
     background-size: cover;
     width: 100%;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
 }
 
 .banner-02 {
     background-image: url(./images/Rectangle\ 5.png);
     background-position: center;
     background-size: cover;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
     text-align: center;
     padding: 90px 50px;
 }
@@ -325,7 +324,7 @@ main {
 }
 
 .contact-us {
-    margin-top: 50px;
+    margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
@@ -362,7 +361,7 @@ main {
 
 .input-123 {
     width: 100%;
-    height: 50px;
+    height: 52px;
     background-color: rgb(243, 243, 243);
     border: none;
     border-radius: 6px;

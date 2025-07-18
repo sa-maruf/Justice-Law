@@ -1,7 +1,7 @@
 header{
     /* position: sticky; 
     top: 0;   */
-    background-color: rgb(51, 41, 41) ;
+    background-color: rgb(54, 45, 45) ;
 }
 .navbar{
     max-width: 1200px;
@@ -27,9 +27,17 @@ header{
 .mob-menu{
     display: none;
 }
+.mob-menu li{
+    color: white;
+    margin-top: 20px;
+}
+.mob-btn{
+    width: 100%;
+    margin-top: 20px;
+}
 @media(max-width:910px){
     .navbar{
-        padding: 24px 18px;
+        padding: 20px 18px;
     }
     .des-menu , .des-btn {
         display: none;

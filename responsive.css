@@ -58,10 +58,11 @@
 
     .contact-us {
         grid-template-columns: repeat(1, 1fr);
+        gap: 50px;
     }
 
     .contact-table {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     /* footer part  */
